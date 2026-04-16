@@ -13,3 +13,9 @@ hashmap.c:71:5: error: ‘size’ undeclared (first use in this function)
       |     ^~~~
 hashmap.c:71:5: note: each undeclared identifier is reported only once for each function it appears in
 30e3dd3
+Thu Apr 16 08:38:22 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 5/60
+cb520e2

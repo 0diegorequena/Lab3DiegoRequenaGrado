@@ -19,3 +19,14 @@ Thu Apr 16 08:38:22 PM UTC 2026:
  tests:  1|6
 total_score: 5/60
 cb520e2
+Thu Apr 16 08:40:11 PM UTC 2026: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:63:5: error: ‘posicioninicial’ undeclared (first use in this function)
+   63 |     posicioninicial = posicion;
+      |     ^~~~~~~~~~~~~~~
+hashmap.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
+480a129

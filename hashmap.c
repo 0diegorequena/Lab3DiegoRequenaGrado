@@ -60,9 +60,11 @@ HashMap * createMap(long capacity) {
 
 void insertMap(HashMap * map, char * key, void * value) {
     int posicion = hash(key, map->capacity);
+    posicioninicial = posicion;
     while(map->buckets[posicion] != NULL) {
         if(is_equal(map->buckets[posicion]->key, key) == 0) return; 
         posicion++;
+        if(posicioninicial == posicion) return;
     }
     Pair *nuevo = (Pair *)malloc(sizeof(Pair));
     nuevo->key = key;

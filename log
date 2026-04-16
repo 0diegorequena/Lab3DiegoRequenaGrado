@@ -2,3 +2,14 @@ Thu Apr 16 08:01:29 PM UTC 2026:
  tests:  0|7
 total_score: 0/60
 1eb2fdf
+Thu Apr 16 08:37:56 PM UTC 2026: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:71:5: error: ‘size’ undeclared (first use in this function)
+   71 |     size++;
+      |     ^~~~
+hashmap.c:71:5: note: each undeclared identifier is reported only once for each function it appears in
+30e3dd3

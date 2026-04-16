@@ -30,3 +30,9 @@ hashmap.c:63:5: error: ‘posicioninicial’ undeclared (first use in this funct
       |     ^~~~~~~~~~~~~~~
 hashmap.c:63:5: note: each undeclared identifier is reported only once for each function it appears in
 480a129
+Thu Apr 16 08:40:24 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 5/60
+59a47b4

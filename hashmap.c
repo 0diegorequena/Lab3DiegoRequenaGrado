@@ -93,7 +93,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     long posicion = hash(key, map->capacity);
     long posicioninicial = posicion;
 
-    while (map->buckets[index] != NULL) {
+    while (map->buckets[posicion] != NULL) {
 
         if (is_equal(map->buckets[posicion]->key, key) == 1) {
             map->current = posicion; 

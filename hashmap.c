@@ -114,7 +114,23 @@ Pair * searchMap(HashMap * map,  char * key) {
 // Recuerde actualizar la variable size.
 
 void eraseMap(HashMap * map,  char * key) {    
+    long index = hash(key, map->capacity);
+    long start = index;
 
+    while (map->buckets[index] != NULL) {
+
+        Pair *pair = map->buckets[index];
+
+        if (pair->key != NULL && is_equal(pair->key, key) == 1) {
+            pair->key = NULL;     
+            pair->value = NULL;   
+            map->size--;          
+            return;
+        }
+        index = (index + 1) % map->capacity;
+
+        if (index == start) return;
+    }
 
 }
 

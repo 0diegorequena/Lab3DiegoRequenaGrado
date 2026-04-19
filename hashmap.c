@@ -91,7 +91,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 Pair * searchMap(HashMap * map,  char * key) {   
     long posicion = hash(key, map->capacity);
-    long posicioninical = posicion;
+    long posicioninicial = posicion;
 
     while (map->buckets[index] != NULL) {
 

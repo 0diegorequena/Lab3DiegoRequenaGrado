@@ -85,3 +85,13 @@ hashmap.c:94:10: error: unused variable ‘posicioninical’ [-Werror=unused-var
       |          ^~~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 e6524dc
+Sun Apr 19 11:28:52 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:96:24: error: array subscript is not an integer
+   96 |     while (map->buckets[index] != NULL) {
+      |                        ^
+0d5243d

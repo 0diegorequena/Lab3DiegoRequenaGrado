@@ -66,3 +66,22 @@ Sun Apr 19 11:19:15 PM UTC 2026:
  tests:  5|4
 total_score: 20/60
 7f5ea7d
+Sun Apr 19 11:28:36 PM UTC 2026: 
+ hashmap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:96:24: error: array subscript is not an integer
+   96 |     while (map->buckets[index] != NULL) {
+      |                        ^
+hashmap.c:105:25: error: ‘posicioninicial’ undeclared (first use in this function); did you mean ‘posicioninical’?
+  105 |         if (posicion == posicioninicial) break;
+      |                         ^~~~~~~~~~~~~~~
+      |                         posicioninical
+hashmap.c:105:25: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:94:10: error: unused variable ‘posicioninical’ [-Werror=unused-variable]
+   94 |     long posicioninical = posicion;
+      |          ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+e6524dc

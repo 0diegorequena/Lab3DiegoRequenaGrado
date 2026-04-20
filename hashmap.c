@@ -175,8 +175,25 @@ Pair * nextMap(HashMap * map) {
 //   e - Inserte los elementos válidos del arreglo old_buckets en el mapa (use la función insertMap que ya implementó).
 
 void enlarge(HashMap * map) {
-    enlarge_called = 1; //no borrar (testing purposes)
+    enlarge_called = 1; 
+    Pair **old_buckets = map->buckets;
+    long old_capacity = map->capacity;
 
+    map->capacity = map->capacity * 2;
+
+    map->buckets = (Pair **) calloc(map->capacity, sizeof(Pair *));
+
+    map->size = 0;
+
+    for (long i = 0; i < old_capacity; i++) {
+
+        if (old_buckets[i] != NULL && old_buckets[i]->key != NULL) {
+
+            insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+        }
+    }
+
+    free(old_buckets);
 
 }
 
